@@ -23,6 +23,7 @@ Nếu bạn đã cài đặt các phần mềm trên, hãy làm tiếp các bư�
 ###
 
 ### Tạo 1 database mới với tên **free-course**
+[Hướng dẫn tạo database](https://viettuts.vn/mysql/tao-database-trong-mysql#goto-h2-3)
 
 *Hướng dẫn dưới đây dành cho người sử dụng Xampp*
 
