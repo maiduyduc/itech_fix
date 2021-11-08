@@ -27,7 +27,9 @@ Nếu bạn đã cài đặt các phần mềm trên, hãy làm tiếp các bư�
 *Hướng dẫn dưới đây dành cho người sử dụng Xampp*
 
 Truy cập vào thư mục htdocs, mở gitbash hoặc cmd và thực thi lần lượt các lệnh sau:
-
+```bash
+Link thư mục htdocs: C:\xampp\htdocs
+```
 Sao chép dự án về máy
 
 ```bash
