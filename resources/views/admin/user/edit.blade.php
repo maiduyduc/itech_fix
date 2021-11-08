@@ -44,7 +44,7 @@
                                 />
                                 <small></small>
                             </div>
-                            <div class="form-group mb-2">
+                            <div class="form-group mb-2" style="@if($user->level ==0) display: none; @endif">
                                 <label class="form-label">Level</label>
                                 <span class="font-size-xs text-muted">(level 0 là admin, level 1 là người dùng)</span>
                                 <select class="form-control"

@@ -1,5 +1,6 @@
 <?php
 
+use App\Role;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -11,6 +12,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\courses::class, 100)->create();
+        factory(\App\courses::class, 50)->create();
+        factory(\App\User::class, 5)->create();
+        $this->call([
+            RoleSeeder::class,
+            CategorySeeder::class,
+            AdminSeeder::class,
+        ]);
+        
     }
 }

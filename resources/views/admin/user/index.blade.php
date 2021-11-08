@@ -64,6 +64,7 @@
                                                    href="{{ route('users.edit', ['id'=>$user->id]) }}"><i
                                                         class="fe fe-edit dropdown-item-icon"></i>Sửa</a>
                                                 <a class="dropdown-item action_delete"
+                                                    style="@if($user->level ==0) display: none; @endif"
                                                    href=""
                                                    data-url="{{ route('users.delete', ['id'=>$user->id]) }}"
                                                 >

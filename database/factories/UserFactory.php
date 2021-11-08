@@ -22,7 +22,8 @@ $factory->define(User::class, function (Faker $faker) {
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'email_verified_at' => now(),
-        'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+        'password' => '$2a$12$5MaeYkyR0Ugcazwna7pX9eLqfGJGbOSsnbe1QkjsBMGoCu6ElQ0Pm', // password 123
         'remember_token' => Str::random(10),
+        'avatar' => '/img/non_user_default.svg'
     ];
 });

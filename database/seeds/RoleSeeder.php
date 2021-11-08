@@ -15,7 +15,7 @@ class RoleSeeder extends Seeder
             ['name'=>'admin', 'display_name'=>'Quản trị hệ thống'],
             ['name'=>'guest', 'display_name'=>'Người dùng'],
             ['name'=>'developer', 'display_name'=>'Phát triển hệ thống'],
-            ['name'=>'content', 'display_name'=>'CHỉnh sửa nội dung'],
+            ['name'=>'content', 'display_name'=>'Chỉnh sửa nội dung'],
         ]);
     }
 }

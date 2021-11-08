@@ -9,7 +9,7 @@ $factory->define(\App\courses::class, function (Faker $faker) {
     return [
         'id' => $faker->unique()->ean8,
         'name' => $faker->text(100),
-        'image_path' => '/storage/course/1/IObHq3sx23HD6QE2X1C8.jpg',
+        'image_path' => '/img/course-javascript.jpg',
         'content' => $faker->text,
         'subscriptions' => random_int(0,5555),
         'category_id' => random_int(1,7),
