@@ -1,61 +1,95 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+# Web chia sẻ khóa học online miễn phí
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Hướng dẫn cài đặt
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Hãy chắc chắn máy tính của bạn đã được cài đặt các phần mềm sau:
+### Windows
+- [Xampp](https://www.apachefriends.org/download.html)
+- [Git](https://git-scm.com/downloads)
+- [Composer](https://getcomposer.org/download/)
+- [Node.js](https://www.npmjs.com/get-npm)
 
-## Learning Laravel
+### Ubuntu
+- [Xampp](https://www.apachefriends.org/download.html)
+- [Git](https://git-scm.com/download/linux)
+- [Composer](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04)
+- [Node.js](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+###
+Nếu bạn đã cài đặt các phần mềm trên, hãy làm tiếp các bước sau đây.
+###
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Tạo 1 database mới với tên **free-course**
 
-## Laravel Sponsors
+*Hướng dẫn dưới đây dành cho người sử dụng Xampp*
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Truy cập vào thư mục htdocs, mở gitbash hoặc cmd và thực thi lần lượt các lệnh sau:
 
-### Premium Partners
+Sao chép dự án về máy
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+```bash
+  git clone https://github.com/maiduyduc/itech_fix.git
+```
 
-## Contributing
+Truy cập vào thư gốc của dự án
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+  cd itech_fix
+```
 
-## Code of Conduct
+Cài đặt Composer và update
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+  composer install
+  composer update
+```
 
-## Security Vulnerabilities
+Cài đặt Node.js và update
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+  npm install
+  npm update
+  npm run dev
+```
 
-## License
+Link thư mục
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+    php artisan storage:link
+```
+
+Khởi tạo khóa ứng dụng
+
+```bash
+  php artisan key:generate
+```
+
+Khởi tại database và dữ liệu mẫu
+
+```bash
+  php artisan migrate:fresh --seed
+```
+
+Chạy serve
+
+```bash
+  php artisan serve
+```
+
+Truy cập vào http://localhost:8000/ hoặc http://127.0.0.1:8000 và đăng nhập với thông tin:
+
+```bash
+  Quyền tài khoản admin
+  ----------------
+  Email: admin@admin
+  Password: 123
+```
+
+*Nếu xuất hiện lỗi sai tài khoản/ mật khẩu hãy thử tạo lại dữ liệu mẫu*
+## Authors
+
+- [@maiduyduc](https://www.github.com/maiduyduc)
+
